@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,600italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+        @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+        html, body {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing:0.5px;
+        background-color:#e5e5e5;
+        margin:0px;
+        padding:0px;
+        overflow-x:hidden;
+        }
+a{
+color:#444444;
+font-weight:bold;
+text-decoration:none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #8f8f8f;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  color:#fa424d;
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+#po {
+  font-family:'Source Sans Pro', sans-serif;
+  margin-bottom: 20px;
+  font-size: 17px;
+  color:#222;
+  line-height: 2;
+}
+#po span {
+  font-weight:600;
+  color:#fa424d;
+  line-height: 2;
+  display: inline;
+}
+#po h3 {
+  text-align:center;
+}
+.main_h {
+  position: fixed;
+  top: 0px;
+  padding-top: 17px;
+  margin-bottom:17px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 873px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  top: 0px;
+  box-shadow:0px 5px 10px #bbb;
+}
+
+.logo {
+  width: 250px;
+  margin-left:10%;
+  font-size:24px;
+  padding-top:0px;
+  opacity:1;
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  float: left;
+  display: block;
+  margin: auto;
+  letter-spacing:-1px;
+  font-weight:700;
+  line-height:36px;
+}
+.logo img{
+  float:left;
+  margin-top:-2px;
+  margin-right:6px;
+  height:40px;
+  border-radius:0px;
+}
+@media only screen and (max-width: 873px) {
+  .logo {
+    margin-top:-6px;
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 873px) {
+  nav {
+    width: 100%;
+  }
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+margin:auto;
+background-color: rgba(255,255,255,1);
+text-align:right;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 873px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  background-color: rgba(255,255,255,1);
+  margin-left: 15px;
+}
+@media only screen and (max-width: 873px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+nav ul a {
+font-size: 16px;
+display:inline-block;
+color:#aaaaaa;
+padding:10px 0px 21px 0px;
+margin: 0 0px;
+background-color: rgba(255,255,255,1);
+font-weight:500;
+text-transform:capitalize;
+border-bottom:3px solid transparent;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+nav ul a:hover {
+
+text-decoration:none;
+color:#444;
+background-color: rgba(255,255,255,1);
+border-bottom:3px solid #427fed;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 5px;
+  width: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 873px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.row {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+
+.content {
+  padding: 50px 2% 250px;
+}
+
+.hero {
+  position: relative;
+  background: url(http://static.tumblr.com/d1e9bc9eb4ad2514cf63d69fa3401977/jpnjrln/J47onyodm/tumblr_static_2783hy2uvs2s4wsc44s8oo8sc.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 230px;
+  min-height: 700px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  text-shadow: 0px 0px 5px #222;
+  letter-spacing: -2px;
+  line-height: 1.2;
+}
+.hero h1 span {
+  letter-spacing: -1.5px;
+  font-size: 22px;
+  color: #b2c9ff;
+  font-weight:400;
+  padding: 12px 47px 0 47px;
+  border-top: 2px solid #b2c9ff;
+  line-height: 3;
+}
+
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  height: 38px;
+  width: 156px;
+  margin: auto;
+  position: absolute;
+  top: 540px;
+  bottom: 0;
+  right: 12px;
+}
+
+.btn a {
+  height: 30px;
+  width: 30px;
+  margin: 5px 3px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  clear: none;
+  display:inline-block;
+  box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.btn .fa {
+  padding: 0;
+  display:inline-block;
+  margin-right: -1px;
+}
+.btn a, .fa a {
+display:inline-block;
+  color:#fff;
+}
+.btn.btn-one a:hover {
+  box-shadow: 0 0 0 4px #3b5998;
+  color: #3b5998;
+}
+.btn-two {
+  margin-top:-40px;
+  margin-left:40px;
+}
+.btn.btn-two a:hover {
+  box-shadow: 0 0 0 4px #00aced;
+  color: #00aced;
+}
+.btn-three {
+  margin-top:-40px;
+  margin-left:80px;
+}
+.btn.btn-three a:hover {
+  box-shadow: 0 0 0 4px #b2f2ff;
+  color: #b2f2ff;
+}
+        </style>
+    </head>
+    <body>
+
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+
+<header class="main_h">
+
+    <div class="row">
+      <a class="logo" href="#"><img src="https://secure.static.tumblr.com/07681cc94ebd5a071d06fea58d13186e/jpnjrln/AGDomnniz/tumblr_static_cp7yqf3fom0c0kc8k84gosoco.png">March for Science</a>
+
+
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href=".sec01">About</a></li>
+                <li><a href=".sec02">Contact</a></li>
+                <li><a href=".sec03">Help Out</a></li>
+                <li><a href=".sec04">Apparel</a></li>
+            </ul>
+        </nav>
+
+    </div> <!-- / row -->
+
+</header>
+
+<div class="hero">
+
+    <h1>March for Science - Ann Arbor, MI<br><span>April 22 on the Diag, 12-2 PM</span></h1>
+
+
+</div>
+
+
+<div class='wrap'>
+  <div class='btn btn-one'>
+    <a href="https://www.facebook.com/events/1237144609734310/"><i class='fa fa-facebook'></i></a>
+  </div>
+  <div class='btn btn-two'>
+    <a href="https://twitter.com/ScienceMarchA2"><i class='fa fa-twitter'></i></a>
+  </div>
+  <div class='btn btn-three'>
+    <a href="mailto:MarchForScienceA2@gmail.com"><i class='fa fa-envelope'></i></a>
+  </div>
+</div>
+<div class="row content">
+    <h2 class="sec01">About</h2>
+    <div id="po"><h3> The Ann Arbor March For Science will take place from noon to 2 pm on April 22, 2017. We will be starting at the Diag.</h3>
+      March For Science - Ann Arbor is for anyone who is excited by science. We are more than just scientists and engineers - we are hobbyists, students, teachers, enthusiasts, and people like you.
+<br>
+We are organizing a family-friendly, non-partisan, educational event to raise awareness of the contributions of science to society, and the importance of supportive public policy. We will be standing for our community, health, economy and our region’s future, while demonstrating Ann Arbor's leadership in science among over 300 Marches For Science around America and across the world.
+<br>
+These marches and rallies are intended to unite us within the scientific community, both degree wielding scientists and science advocates alike. From the men and women sporting PhDs to the young adolescents doing CoCoRaHS reporting and looking through backyard telescopes, and all in between, <b>let us set aside our differences and come together as one, unified, scientific community. We believe in empirical science and that it should play a fundamental role in determining governmental policy.</b>
+<br>So, basically - <br><center>
+Do you like medicine? March.<br>
+Do you like air conditioning? March.<br>
+Do you like cars? March.<br>
+Do use the internet? March.<br>
+Do you like smart phones? March.<br>
+Do you like Velcro? <b>March.</b></center></div>
+    <h2 class="sec02">Contact</h2>
+    <div id="po">For the Facebook event, click here.<br>For the Facebook volunteering group, click here. <br>For the official Twitter account, click here.<br></div>
+    <h2 class="sec03">Help Out</h2>
+    <div id="po">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</div>
+    <h2 class="sec04">Apparel</h2>
+    <div id="po"><img src="https://assetly.ordermygear.com/images/w_300,h_300,c_pad/58cfe80a08cba6775b8b45e3.png"></div>
+</div>
+<script>
+// Sticky Header
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 700) {
+        $('.main_h').addClass('sticky');
+    } else {
+        $('.main_h').removeClass('sticky');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+    } else {
+        $('.main_h').addClass('open-nav');
+    }
+});
+
+$('.main_h li a').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+    }
+});
+
+// navigation scroll lijepo radi materem
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});</script>
+
+    </body>
+</html>
